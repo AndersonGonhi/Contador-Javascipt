@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body{
+  height: 100vh;
+  max-width: 100vw;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+
+main{
+  width: 60rem;
+  height: 40rem;
+  margin: 0 auto;
+
+
+
+
+  border-radius: 8px;
+  background: #f7f7f7d4;
+  box-shadow:  -6px 6px 27px #bebebe, 6px -6px 27px #ffffff;
+}
+
+h1{
+  font-size: 8rem;
+  text-align: center;
+}
+
+span{
+  display: block;
+  text-align: center;
+  font-size: 8rem;
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  background-color: #cac7cda7;
+  width: 9rem;
+  height: 4rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 2rem;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  cursor: pointer;
+}
+
+.mais button:hover{
+  background-color: #a3dea7ec;
+}
+
+.menos button:hover{
+  background-color: #d89492ec;
+}
+
+.menos, .mais{
+  display: flex;
+  gap: 1.5rem;
+}
+
+#diminuir{
+  margin-right: 7rem;
+}
+
+.zerar{ 
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+#zerar{
+  background: #fc2d2d;
+  color: white;
+}
+
+#zerar:hover{
+  background-color: #e52727;
+}
+
+
+/* -----------RESPONSIVIDADE---------- */
+
+@media (max-width: 660px){
+  main{
+  height: max-content;
+  }
+
+  .btns{   
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .menos, .mais{
+    flex-direction: column-reverse;  
+  }
+
+  #diminuir{
+    margin-right: 0;
+  }
+
+  h1{
+    font-size: 6rem;
+  }
+
+  span{
+    font-size: 6rem;
+  }
+
+}
+
